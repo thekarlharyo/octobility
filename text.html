@@ -72,20 +72,22 @@
   <section class="contact_section layout_padding">
     <div class="container">
       <div class="heading_container">
-          <video width="854" height="480" controls>
-			<source src="video/Learn ASL Alphabet Video.mp4" type="video/mp4">
-		</video> 
+			<img id="imagedisp" />
       </div>
       <div class="row">
         <div class="col-md-6">
           <form action="">
             <div>
-              <input type="text" class="message-box" placeholder="Type in..." />
+              <input type="text" id="text" class="message-box" placeholder="Type in..." />
             </div>
             <div class="d-flex ">
-              <button>
+              <button type="button" id="button2" onclick="loadDecode()">
                 SEND
               </button>
+			</div>
+			<br><br>
+			<div> 
+				<audio controls autoplay id="audioplayer">
             </div>
           </form>
         </div>
@@ -114,6 +116,12 @@
   <!-- Google Map -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
   <!-- End Google Map -->
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity= 
+        "sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+        crossorigin="anonymous"> 
+  </script>
 
 
 </body>
