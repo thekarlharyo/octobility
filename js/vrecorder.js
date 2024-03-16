@@ -20,7 +20,7 @@ if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia){
         }
 
         mediaRecorder.onstop = () => {
-            const blob = new Blob(chunks, {'type': 'audio/ogg; codecs=opus'})
+            const blob = new Blob(chunks, {'type': 'audio/wav; codecs=opus'})
             chunks = []
             audioURL = window.URL.createObjectURL(blob)
             document.querySelector('audio').src = audioURL
